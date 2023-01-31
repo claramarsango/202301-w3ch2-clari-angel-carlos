@@ -1,0 +1,22 @@
+{
+  "name": "students-cards",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-js": "tsc",
+    "build-js:dev": "tsc -w",
+    "build-css": "sass src/scss/app.scss public/css/styles.css",
+    "build-css:dev": "npm run build-css -- -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.39.0",
+    "@typescript-eslint/parser": "^5.39.0",
+    "eslint": "^8.25.0",
+    "sass": "^1.55.0",
+    "typescript": "^4.8.4"
+  }
+}
