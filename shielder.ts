@@ -1,14 +1,22 @@
 import { Character } from "./character.js";
-import { Fighter } from "./figther.js";
+import { Fighter } from "./fighter.js";
 export class Shielder extends Character {
-  constructor(name, family, age, pelotismLevel, servesTo) {
+  servesTo;
+  pelotism;
+  constructor(
+    name: string,
+    family: string,
+    age: number,
+    pelotismLevel: number,
+    servesTo: Character
+  ) {
     super(name, family, age);
     this.pelotism = this.filterPelotism(pelotismLevel);
     if (servesTo instanceof Fighter) {
       this.servesTo = servesTo;
     }
   }
-  filterPelotism(pelotismLevel) {
+  filterPelotism(pelotismLevel: number) {
     if (pelotismLevel < 0) {
       return 0;
     }
