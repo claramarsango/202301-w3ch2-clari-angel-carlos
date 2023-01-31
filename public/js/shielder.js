@@ -1,5 +1,5 @@
-import { Character } from "./src/character.js";
-import { Fighter } from "./src/figther.js";
+import { Character } from "./character.js";
+import { Fighter } from "./fighter.js";
 export class Shielder extends Character {
     constructor(name, family, age, pelotismLevel, servesTo) {
         super(name, family, age);
